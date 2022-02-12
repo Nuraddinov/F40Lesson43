@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body style=" background-image: linear-gradient(-90deg, black, blue);">
+    <!-- 
+    <input placeholder="Enter text..." class="myInput" type="text">
+    <h2></h2> -->
+    <div class="section1">
+      <div class="container">
+        <h1>Students List</h1>
+        <div class="d-flex mb-2">
+          <input
+            type="text"
+            placeholder="Enter firstName"
+            class="fname form-control me-2"
+          />
+          <input
+            type="text"
+            placeholder="Enter lastName"
+            class="lname form-control me-2"
+          />
+          <input
+            type="text"
+            placeholder="Enter userName"
+            class="uname form-control me-2"
+          />
+          <input
+            type="number"
+            placeholder="Enter phoneNumber"
+            class="number form-control me-2"
+          />
+          <button
+            type="button"
+            class="btn btn-primary add"
+            style="color: black"
+          >
+            Add
+          </button>
+          <button
+            type="button"
+            class="btn btn-warning edit"
+            style="display: none"
+          >
+            Edit
+          </button>
+        </div>
+        <table class="table table-dark table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Firstname</th>
+              <th scope="col">Lastname</th>
+              <th scope="col">Username</th>
+              <th scope="col">Phonenumber</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+
+          <tbody class="tableBody"></tbody>
+        </table>
+        <h2></h2>
+      </div>
+    </div>
+
+    <script src="js/jQuery.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
